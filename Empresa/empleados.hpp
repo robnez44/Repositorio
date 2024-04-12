@@ -37,7 +37,7 @@ public:
     string EliminarEmpleado(string);
     string BuscarEmpleado(string);
     float ModificarSalario(string, float);
-    float CalcularSalario(string);
+    string CalcularSalario(string);
     void MostrarLista();
     string ModificarOcupaciones(string, string);
 };

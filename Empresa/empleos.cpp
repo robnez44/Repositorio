@@ -142,7 +142,7 @@ float Trabajo::ModificarSalario(string _Nombre, float SalarioNuevo)
     }
 }
 
-float Trabajo::CalcularSalario(string _Nombre)
+string Trabajo::CalcularSalario(string _Nombre)
 {
     bool encontrado = false;
 
@@ -167,7 +167,7 @@ float Trabajo::CalcularSalario(string _Nombre)
             cout << "Salario anual: $" << salarioAnual << endl;
             cout << "Salario mas bono por llevar trabajo al dia: $" << salarioBono << endl;
             cout << "**********************************\n";
-            return salario;
+            return "Salario calculado exitosamente. ";
         }
     }
 

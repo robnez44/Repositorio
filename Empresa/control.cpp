@@ -3,6 +3,7 @@
 #include <list>
 #include <conio.h>
 #include "empleos.cpp"
+#include "usuario.cpp"
 #include <stdlib.h>
 
 using namespace std;
@@ -91,6 +92,7 @@ void menu(Trabajo &trabajo)
         cout << "5.Calcular salario de algun empleado.\n";
         cout << "6.Modificar ocupaciones de empleado.\n";
         cout << "7.Mostrar lista de empleados.\n";
+        cout << "8.Salir del programa.\n";
         cout << "Opcion: ";
         cin >> opc;
 
@@ -178,6 +180,10 @@ void menu(Trabajo &trabajo)
             cout << "\n";
             system("pause");
             break;
+
+        case 8:
+            cout << "Saliendo del programa..." <<endl;
+            return;
         }
         cout << "Le gustaria regresar al menu principal? (s/n): ";
         cin >> regresar;
@@ -206,22 +212,26 @@ void menuUsuario()
         switch (opc)
         {
         case 1:
-            cout << "\n\t==Salarios==\n";
+            cout <<"\n\t==Sueldos==\n";
+            TablaSalario();
             system("pause");
             break;
 
         case 2:
             cout << "\n\t==Horarios==\n";
+            TablaHorario();
             system("pause");
             break;
 
         case 3:
             cout << "\n\t==Sucursales==\n";
+            TablaSucursal();
             system("pause");
             break;
 
         case 4:
             cout << "\n\t==Informacion de la empresa==\n";
+            InfoEmpresa();
             system("pause");
             break;
 
