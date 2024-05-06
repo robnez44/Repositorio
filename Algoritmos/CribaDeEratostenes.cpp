@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    
+
     int n;
     vector<bool> isPrime;
     vector<int> primes;
