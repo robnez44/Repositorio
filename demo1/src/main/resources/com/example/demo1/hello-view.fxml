@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="870.0" prefWidth="1246.0" spacing="12.0" styleClass="vbox" stylesheets="@css/vBox.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CafeteriaUCA/logo.png" />
+         </image>
+      </ImageView>
+      <GridPane styleClass="gridPane" stylesheets="@css/gridPane.css" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="vBox4" stylesheets="@css/vBoxArriba.css">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Crepeado de papas con queso" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="362.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <Label style="-fx-font-size: 20;" text="Cantidad" />
+                              <Spinner fx:id="spnPapas" prefHeight="23.0" prefWidth="264.0" />
+                              <Label style="-fx-font-size: 20;" text="Subtotal:" />
+                              <Label fx:id="lblSubPapas" style="-fx-font-size: 20;" text="\$0.00" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="247.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@CafeteriaUCA/capeado.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-font-size: 20;" text="Precio: $1.25" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </GridPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="vBox4" stylesheets="@css/vBoxAbajo.css" GridPane.rowIndex="1">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Alas de pollo frito" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="188.0" prefWidth="272.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-size: 20;" text="Cantidad" />
+                              <Spinner fx:id="spnAlas" editable="true" prefHeight="23.0" prefWidth="264.0" />
+                              <Label style="-fx-font-size: 20;" text="Subtotal:" />
+                              <Label fx:id="lblSubAlas" style="-fx-font-size: 20;" text="\$0.00" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="247.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@CafeteriaUCA/pollo.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-font-size: 20;" text="Precio: $1.75" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </GridPane.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="vBox4" stylesheets="@css/vBoxAbajo.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Vegetales al ajillo" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="188.0" prefWidth="229.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-size: 20;" text="Cantidad" />
+                              <Spinner fx:id="spnVegetales" prefHeight="23.0" prefWidth="264.0" />
+                              <Label style="-fx-font-size: 20;" text="Subtotal:" />
+                              <Label fx:id="lblSubVeg" style="-fx-font-size: 20;" text="\$0.00" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="247.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@CafeteriaUCA/vegetales.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-font-size: 20;" text="Precio: $0.75" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="vBox4" stylesheets="@css/vBoxArriba.css" GridPane.columnIndex="1">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Carne de res deshilachada" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="362.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-size: 20;" text="Cantidad" />
+                              <Spinner fx:id="spnCarne" prefHeight="23.0" prefWidth="264.0" />
+                              <Label style="-fx-font-size: 20;" text="Subtotal:" />
+                              <Label fx:id="lblSubCarne" style="-fx-font-size: 20;" text="\$0.00" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="189.0" prefWidth="247.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="124.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@CafeteriaUCA/carne.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-font-size: 20;" text="Precio: $2.25" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="165.0" prefWidth="1206.0" spacing="12.0">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="301.0" spacing="20.0" styleClass="vBox2" stylesheets="@css/vBox2.css">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Tipo de cliente">
+                     <font>
+                        <Font name="Ubuntu" size="25.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rdBotonEmpleado" mnemonicParsing="false" onAction="#rdEmpleado_selected" text="Empleado">
+                     <font>
+                        <Font size="18.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="rdBotonEstudiante" mnemonicParsing="false" onAction="#rdEstudiante_selected" text="Estudiante">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="301.0" spacing="20.0" styleClass="vBox2" stylesheets="@css/vBox2.css">
+               <children>
+                  <Label style="-fx-font-size: 25;" text="Forma de pago">
+                     <font>
+                        <Font name="Ubuntu" size="25.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rdBotonEfectivo" mnemonicParsing="false" text="Efectivo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rdBotonTarjeta" mnemonicParsing="false" text="Tarjeta">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children></VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vBox2" stylesheets="@css/vBox2.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label style="-fx-font-size: 20;" text="Nombre del cliente:">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <TextField fx:id="txtCliente" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label style="-fx-font-size: 20;" text="Total:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotal" style="-fx-font-size: 20;" text="\$0.00">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#btnLimpiar" prefHeight="38.0" prefWidth="80.0" stylesheets="@css/buttonStyle.css" text="LImpiar" />
+                        <Button fx:id="btnCOmprar" mnemonicParsing="false" onAction="#btnComprar" prefHeight="38.0" prefWidth="80.0" stylesheets="@css/buttonStyle.css" text="Comprar" />
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
