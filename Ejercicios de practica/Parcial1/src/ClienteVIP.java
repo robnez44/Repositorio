@@ -20,4 +20,4 @@ public class ClienteVIP extends Cliente implements Descuento{
         System.out.println("- Acceso a áreas exclusivas del hotel, como salones VIP o áreas de descanso.");
         // Agregar más beneficios aquí según sea necesario
     }
-}
+} 
