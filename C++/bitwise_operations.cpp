@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// << correr 1 n espacios a la izquierda
-// >> correr 1 n espacios a la derecha
+// << operador left shift (corre los bit encendidos n espacios a la izquierda)
+// >> operador right shift (corre los bit encedidos n espacios a la derecha)
 // & operador 'and' 
 // | operador 'or'
 // ^ operador 'xor'
@@ -31,6 +31,8 @@ int main(){
     // 4 = 0100 
     // ~4 = 1011
     // 10 & ~4 = 1010 (1010 = 10)
-    cout << (int)0b1001; // imprime 9
+    cout << (int)0b1001 << endl; // imprime 9
+    cout << (13<<1) << endl; // imprime 26
+    cout << (13<<2) << endl; // imprime 52
     return 0;
 }
