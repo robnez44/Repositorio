@@ -7,7 +7,7 @@ import Factory.ProductoLacteo;
 import Iterator.Inventario;
 import Singleton.Tienda;
 
-public class Main {
+public class Main { 
     public static void main(String[] args) {
 
         //configuracion de la tienda usando singleton
